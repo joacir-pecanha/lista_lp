@@ -99,7 +99,7 @@ Para mais informações acesse [Aula 01: Fluxogramas.](https://www.notion.so/cai
    flowchart TD
       start((inicio)) --> input1[\Insira o primeiro numero\]
       input1 --> input2[\insira o segundo número\]
-      
+      input2 --> input3[\insira o terceiro número\]
    ```
    
 8. Construa um fluxograma para calcular o fatorial de um número fornecido pelo usuário.
