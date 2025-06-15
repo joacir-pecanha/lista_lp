@@ -70,7 +70,8 @@ Para mais informações acesse [Aula 01: Fluxogramas.](https://www.notion.so/cai
    ```mermaid
    flowchart TD
     start((inicio)) --> input[\digite sua idade\]
-    input ---> verify{ idade >=16?}
+    input --> input2[\você possui título de eleitor?\]
+    input2 ---> verify{ idade >=16? \n and \n titulo = sim? }
     verify ---> |sim| bigger[\voce já pode votar!\]
     verify ---> |não| smaller[\você não pode votar :c\]
     bigger ---> fim([FIM])
@@ -100,13 +101,28 @@ Para mais informações acesse [Aula 01: Fluxogramas.](https://www.notion.so/cai
       start((inicio)) --> input1[\Insira o primeiro numero\]
       input1 --> input2[\insira o segundo número\]
       input2 --> input3[\insira o terceiro número\]
+      input3 --> verify{n1 > n2 and\n n1 > n3?}
+      verify --> |sim| resp1[\o primeiro número é maior\]
+      verify --> |não| verify2{n1 == n2?}
+      verify2 --> |sim| resp2[\os dois primeiros são iguais e maiores\]
+      verify2 --> |não| verify3{n2 == n3?} 
+      verify3 --> |sim| resp3[\os dois ultimos são iguais e maiores\]
+      verify3 --> |não| verify4{n2 > n3?}
+      verify4 --> verify5{n1 == n2? }
    ```
    
 8. Construa um fluxograma para calcular o fatorial de um número fornecido pelo usuário.
    
    ```mermaid
    flowchart TD
-      G["Sua resposta aqui!"]
+      A((inicio)) ---> B[\digite um número\] 
+      B --> C[r=1] 
+      C -->  D{ n > 1?} 
+      D --> |sim| E[r=r*n]
+      E --> F[n=n-1]
+      F --> D 
+      D --> |não| G[\resposta = r\]
+      G --> H((fim))
    ```
    
 9. Elabore um fluxograma para verificar se um número digitado pelo usuário é par.
@@ -119,12 +135,15 @@ Para mais informações acesse [Aula 01: Fluxogramas.](https://www.notion.so/cai
    
    ```mermaid
    flowchart TD
-      H["Sua resposta aqui!"]
+      start((inicio)) --> input[\digite um número\]
+      input --> verify{n % 2 == 0} 
+      verify --> |sim| resp[/o numero é par/]
+      verify --> |não| resp2[/o número é impar/]
    ```
    
 10. Elabore um fluxograma para verificar se um número digitado pelo usuário é primo.
    
    ```mermaid
    flowchart TD
-      I["Sua resposta aqui!"]
+    
    ```
