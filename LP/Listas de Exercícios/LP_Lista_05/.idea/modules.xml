@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/LP_Lista_05.iml" filepath="$PROJECT_DIR$/LP_Lista_05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exerc_1/exerc_1.iml" filepath="$PROJECT_DIR$/exerc_1/exerc_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exerc_2/exerc_2.iml" filepath="$PROJECT_DIR$/exerc_2/exerc_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exerc_3/exerc_3.iml" filepath="$PROJECT_DIR$/exerc_3/exerc_3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exerc_4/exerc_4.iml" filepath="$PROJECT_DIR$/exerc_4/exerc_4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exerc_5/exerc_5.iml" filepath="$PROJECT_DIR$/exerc_5/exerc_5.iml" />
+    </modules>
+  </component>
+</project>
